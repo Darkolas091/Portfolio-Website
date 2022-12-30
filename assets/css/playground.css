@@ -1,14 +1,26 @@
 @import url("fontawesome-all.min.css");
 
+
+/*body*/
+
+body, input, select, textarea {
+  color: #888;
+  font-family: "Lato", sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 1.75em;
+}
 html, body {
   height: 100%; /* Set the height of the html and body elements to 100% */
   margin: 0; /* Remove the default margins */
   padding: 0; /* Remove the default padding */
+  overflow-x: hidden;
 }
 
 #main {
   min-height: 100%; /* Set the minimum height of the #main element to 100% */
   position: relative; /* Set the position to relative */
+  background-color: #222222;
 }
 
 
@@ -42,9 +54,9 @@ html, body {
   margin-right: 15px;
 }
 
-#footer ul.copyright li:last-child {
+/*#footer ul.copyright li:last-child {
   margin-right: 0;
-}
+}*/
 
 #footer ul.copyright li a {
   color: #fff;
@@ -95,27 +107,17 @@ nav span{
 }
 
 
-/*body*/
-
-body, input, select, textarea {
-  color: #888;
-  font-family: "Lato", sans-serif;
-  font-size: 16pt;
-  font-weight: 400;
-  line-height: 1.75em;
-}
-
-
 
 
 section#projects {
   background-color: #FFA500;
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
   grid-auto-flow: row;
   grid-gap: 2px;
   width: auto;
   margin: 0 auto;
+  border-bottom: 2px dotted #FFA500;
 }
 
 section#projects .project {

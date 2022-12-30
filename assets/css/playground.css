@@ -1,6 +1,9 @@
+@import url("fontawesome-all.min.css");
+
+
 /*topbar nav*/
 nav {
-  background-color: #222222;
+  background-color: #3C3C3C;
   color: #ffffff;
 }
 
@@ -24,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #3C3C3C;
+  background-color: #222222;
 }
 
 nav a span {
@@ -52,16 +55,121 @@ body, input, select, textarea {
 
 /*footer*/
 
-footer#footer {
-  background-color: #3C3C3C;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+
+@media (max-width: 767px) {
+  footer#footer {
+    position: relative; /* Set the position to relative on small screens */
+  }
 }
 
-footer#footer ul.copyright {
-  list-style-type: none;
+
+#footer {
+	background-color: #3c3c3c;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  #footer ul.copyright {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #footer ul.copyright li {
+	display: inline-block;
+	margin-right: 15px;
+  }
+  
+  #footer ul.copyright li:last-child {
+	margin-right: 0;
+  }
+  
+  #footer ul.copyright li a {
+	color: #fff;
+	text-decoration: none;
+  }
+
+
+section#projects {
+  background-color: #FFA500;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  grid-gap: 2px;
+  width: auto;
+  margin: 0 auto;
+}
+
+section#projects .project {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 20px;
+}
+
+section#projects .project h3 {
+  margin: 0;
+}
+
+section#projects .project p {
+  margin: 10px 0;
+}
+
+section#projects .project ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section#projects .project li {
+  display: inline-block;
+  background-color: #3C3C3C;
+  color: #ffffff;
+  padding: 10px;
+  margin: 0 5px 5px 0;
+}
+
+
+
+
+
+/*grid*/
+@media (max-width: 767px) {
+  section#projects 
+  {
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+    width: auto;
+    overflow-x: hidden;
+  }
+
+  section#projects .project p {
+    font-size: 14px; /* Reduce the font size of the p element on small screens */
+  }
+
+  section#projects .project ul {
+    display: flex; /* Display the li elements in a row on small screens */
+    flex-wrap: wrap; /* Wrap the li elements to the next row if they don't fit */
+  }
+
+  section#projects .project li {
+    font-size: 14px; /* Reduce the font size of the li element on small screens */
+  }
+}
+
+section#projects .project p {
+  margin:  4px 0;
+}
+
+section#projects .project ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section#projects .project li {
+  display: inline-block;
+  background-color: #3C3C3C;
+  color: #ffffff;
+  padding: 2px;
+  margin: 0 5px 5px 0;
 }

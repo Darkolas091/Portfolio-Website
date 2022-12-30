@@ -1,5 +1,62 @@
 @import url("fontawesome-all.min.css");
 
+html, body {
+  height: 100%; /* Set the height of the html and body elements to 100% */
+  margin: 0; /* Remove the default margins */
+  padding: 0; /* Remove the default padding */
+}
+
+#main {
+  min-height: 100%; /* Set the minimum height of the #main element to 100% */
+  position: relative; /* Set the position to relative */
+}
+
+
+/*footer*/
+
+
+@media (max-width: 767px) {
+  footer#footer {
+    position: relative; /* Set the position to relative on small screens */
+  }
+}
+
+#footer {
+  background-color: #3c3c3c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: absolute; /* Set the position to absolute */
+  bottom: 0; /* Position the footer at the bottom of the page */
+  width: 100%; /* Make the footer take up the full width of the page */
+}
+
+#footer ul.copyright {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul.copyright li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#footer ul.copyright li:last-child {
+  margin-right: 0;
+}
+
+#footer ul.copyright li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+  #footer ul.copyright li a {
+    font-size: 5px; /* Reduce the font size on small screens */
+  }
+}
 
 /*topbar nav*/
 nav {
@@ -40,11 +97,6 @@ nav span{
 
 /*body*/
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 body, input, select, textarea {
   color: #888;
   font-family: "Lato", sans-serif;
@@ -53,42 +105,7 @@ body, input, select, textarea {
   line-height: 1.75em;
 }
 
-/*footer*/
 
-
-@media (max-width: 767px) {
-  footer#footer {
-    position: relative; /* Set the position to relative on small screens */
-  }
-}
-
-
-#footer {
-	background-color: #3c3c3c;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-  }
-  
-  #footer ul.copyright {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  #footer ul.copyright li {
-	display: inline-block;
-	margin-right: 15px;
-  }
-  
-  #footer ul.copyright li:last-child {
-	margin-right: 0;
-  }
-  
-  #footer ul.copyright li a {
-	color: #fff;
-	text-decoration: none;
-  }
 
 
 section#projects {

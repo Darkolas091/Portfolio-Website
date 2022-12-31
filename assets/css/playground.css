@@ -74,6 +74,7 @@ html, body {
 nav {
   background-color: #3C3C3C;
   color: #ffffff;
+  text-align: center;
 }
 
 nav ul {
@@ -83,8 +84,19 @@ nav ul {
   display: flex;
 }
 
+
+nav ul li span {
+  font-family: "Lato", sans-serif;
+  font-size: 16pt;
+  pointer-events: none;
+  
+}
+
 nav li {
   margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav a {
@@ -107,6 +119,7 @@ nav span{
 }
 
 
+
 h3 a {
   color: #fff;
   text-decoration: none;
@@ -122,21 +135,24 @@ h3 a::before {
 }
 
 section#projects {
-  background-color: #FFA500;
+  background-color: #222222;
   display: grid;
   grid-template-columns: repeat(5, minmax(200px, 1fr));
   grid-auto-flow: row;
-  grid-gap: 2px;
+  grid-gap: 2px;;
   width: auto;
   margin: 0 auto;
-  border-bottom: 2px dotted #FFA500;
+  border-bottom: 2px solid #FFA500;
+  border-top: 2px solid #FFA500;
 }
 
 section#projects .project {
   background-color: #222222;
   color: #ffffff;
   padding: 20px;
+  border-right: 1px solid #FFA500;
 }
+
 
 section#projects .project h3 {
   margin: 0;

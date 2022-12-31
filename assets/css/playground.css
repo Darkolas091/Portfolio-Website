@@ -8,7 +8,7 @@ body, input, select, textarea {
   font-family: "Lato", sans-serif;
   font-size: 16pt;
   font-weight: 400;
-  line-height: 1.75em;
+  line-height: 1.5em;
 }
 html, body {
   height: 100%; /* Set the height of the html and body elements to 100% */
@@ -107,7 +107,19 @@ nav span{
 }
 
 
+h3 a {
+  color: #fff;
+  text-decoration: none;
+}
 
+h3 a:hover {
+  color: #FFA500;
+}
+
+h3 a::before {
+  content: "> ";
+  color: #FFA500;
+}
 
 section#projects {
   background-color: #FFA500;
@@ -129,9 +141,8 @@ section#projects .project {
 section#projects .project h3 {
   margin: 0;
 }
-
-section#projects .project p {
-  margin: 10px 0;
+section#projects .project p{
+  font-size: 0.8em;
 }
 
 section#projects .project ul {
@@ -142,13 +153,37 @@ section#projects .project ul {
 
 section#projects .project li {
   display: inline-block;
-  background-color: #3C3C3C;
+  background-color: #222222;
   color: #ffffff;
-  padding: 10px;
-  margin: 0 5px 5px 0;
+  padding: 5px;
+  margin: 0 2px 2px 0;
+  font-size: 16px;
+  line-height: 1em;
 }
 
+section#projects .project li .fa{
+  font-size: 20px;
+}
 
+section#projects .project p {
+  margin:  4px 0;
+}
+
+.tag {
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #333; /* Changes the background color of the tag */
+  color: #fff; /* Changes the color of the icon */
+  font-size: 2em; /* Adjusts the size of the icon */
+  background-color: gray;
+  display: inline-block; /* Allows the tags to be displayed in a line */
+  text-align: center; /* Centers the icon within the tag */
+}
+
+section#projects .project li i.colored {
+  font-size: 1.8em;
+}
 
 
 
@@ -175,20 +210,4 @@ section#projects .project li {
   }
 }
 
-section#projects .project p {
-  margin:  4px 0;
-}
 
-section#projects .project ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-section#projects .project li {
-  display: inline-block;
-  background-color: #3C3C3C;
-  color: #ffffff;
-  padding: 2px;
-  margin: 0 5px 5px 0;
-}

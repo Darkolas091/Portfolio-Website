@@ -1,0 +1,229 @@
+@import url("fontawesome-all.min.css");
+
+
+/*body*/
+
+body, input, select, textarea {
+  color: #888;
+  font-family: "Lato", sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+html, body {
+  height: 100%; /* Set the height of the html and body elements to 100% */
+  margin: 0; /* Remove the default margins */
+  padding: 0; /* Remove the default padding */
+  overflow-x: hidden;
+}
+
+#main {
+  min-height: 100%; /* Set the minimum height of the #main element to 100% */
+  position: relative; /* Set the position to relative */
+  background-color: #222222;
+}
+
+
+/*footer*/
+
+
+@media (max-width: 767px) {
+  footer#footer {
+    position: relative; /* Set the position to relative on small screens */
+  }
+}
+
+#footer {
+  background-color: #3c3c3c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: absolute; /* Set the position to absolute */
+  bottom: 0; /* Position the footer at the bottom of the page */
+  width: 100%; /* Make the footer take up the full width of the page */
+}
+
+#footer ul.copyright {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul.copyright li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/*#footer ul.copyright li:last-child {
+  margin-right: 0;
+}*/
+
+#footer ul.copyright li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+  #footer ul.copyright li a {
+    font-size: 5px; /* Reduce the font size on small screens */
+  }
+}
+
+/*topbar nav*/
+nav {
+  background-color: #3C3C3C;
+  color: #ffffff;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+nav ul li span {
+  font-family: "Lato", sans-serif;
+  font-size: 16pt;
+  pointer-events: none;
+  
+}
+
+nav li {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #222222;
+}
+
+nav a span {
+  font-size: 20px;
+}
+nav span{
+  font-size: 20px;
+}
+
+
+
+h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  color: #FFA500;
+}
+
+h3 a::before {
+  content: "> ";
+  color: #FFA500;
+}
+
+section#projects {
+  background-color: #222222;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  grid-gap: 2px;;
+  width: auto;
+  margin: 0 auto;
+  border-bottom: 2px solid #FFA500;
+  border-top: 2px solid #FFA500;
+}
+
+section#projects .project {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #FFA500;
+}
+
+
+section#projects .project h3 {
+  margin: 0;
+}
+section#projects .project p{
+  font-size: 0.8em;
+}
+
+section#projects .project ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section#projects .project li {
+  display: inline-block;
+  background-color: #222222;
+  color: #ffffff;
+  padding: 5px;
+  margin: 0 2px 2px 0;
+  font-size: 16px;
+  line-height: 1em;
+}
+
+section#projects .project li .fa{
+  font-size: 20px;
+}
+
+section#projects .project p {
+  margin:  4px 0;
+}
+
+.tag {
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #333; /* Changes the background color of the tag */
+  color: #fff; /* Changes the color of the icon */
+  font-size: 2em; /* Adjusts the size of the icon */
+  background-color: gray;
+  display: inline-block; /* Allows the tags to be displayed in a line */
+  text-align: center; /* Centers the icon within the tag */
+}
+
+section#projects .project li i.colored {
+  font-size: 1.8em;
+}
+
+
+
+/*grid*/
+@media (max-width: 767px) {
+  section#projects 
+  {
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+    width: auto;
+    overflow-x: hidden;
+  }
+
+  section#projects .project p {
+    font-size: 14px; /* Reduce the font size of the p element on small screens */
+  }
+
+  section#projects .project ul {
+    display: flex; /* Display the li elements in a row on small screens */
+    flex-wrap: wrap; /* Wrap the li elements to the next row if they don't fit */
+  }
+
+  section#projects .project li {
+    font-size: 14px; /* Reduce the font size of the li element on small screens */
+  }
+}
+
+

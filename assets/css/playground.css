@@ -145,21 +145,33 @@ section#projects {
   border-bottom: 2px solid #FFA500;
   border-top: 2px solid #FFA500;
 }
-@media (max-width: 767px) {
-  section#projects .project {
-border-bottom: 2px solid #FFA500;
-  }
-}
+
 section#projects .project {
   background-color: #222222;
   color: #ffffff;
   padding: 20px;
   border-right: 1px dotted #696969;
   /*border-left: 4px solid #FFA500;*/
-  border-bottom: 1px solid #FFA500
+  border-bottom: 1px solid #FFA500;
   
 }
+section#projects .project:nth-child(5n) {
+  border-right: none;
+}
 
+@media (max-width: 767px) {
+  section#projects .project {
+border-bottom: 2px solid #FFA500;
+  }
+
+  section#projects .project:nth-child(5n) {
+    border-right: 1px dotted #696969;
+}
+
+section#projects .project:nth-child(2n) {
+  border-right: none
+}
+}
 
 section#projects .project h3 {
   margin: 0;
